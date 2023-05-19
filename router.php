@@ -1,7 +1,10 @@
 <?php
-    include_once 'modelo/model.php';
+    require_once 'modelo/model.php';
+    require_once 'controlador/controlador.php';
+    require_once 'vista/vista.php';
 
-    $modelo = new modelo();
+    $vista = new vista();
 
-    print_r($modelo->mostrar())
+    $vista->cabeza();
+    $vista->pie();
 ?>
