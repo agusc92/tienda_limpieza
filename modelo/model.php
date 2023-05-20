@@ -8,7 +8,7 @@
             $this->db = new PDO('mysql:host=localhost;dbname=db_limpiesa','root','123456');
         }
 
-        public function mostrar(){
+        public function traer(){
             $consulta = $this->db->prepare("SELECT * FROM productos");
             $consulta->execute();
             $this->datos[] = $consulta->fetchAll(PDO::FETCH_ASSOC);

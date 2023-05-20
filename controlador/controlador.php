@@ -12,6 +12,12 @@
 
         function cabeza(){
            $this->vista->cabeza();
+           echo ' hola';
+        }
+        function listar(){
+           $datos = $this->modelo->traer();
+          
+           $this ->vista->lista($datos[0]);
         }
     }
 

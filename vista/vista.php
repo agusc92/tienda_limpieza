@@ -16,6 +16,10 @@ class vista{
      function pie(){
         $this->smarty->display('vista/tenplates/footer.tpl');
     }
+    function lista($arr){
+        $this->smarty ->assign('dato',$arr);
+        $this->smarty -> display('vista/tenplates/lista.tpl');
+    }
 
 }
 
