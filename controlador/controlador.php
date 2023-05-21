@@ -19,6 +19,10 @@
           
            $this ->vista->lista($datos[0]);
         }
+        function individual($id){
+            $datos = $this->modelo->traerUno($id);
+            $this->vista->mostrarProducto($datos[0]);
+        }
     }
 
 ?>

@@ -7,8 +7,10 @@
     $controlador = new controlador();
     $vista->cabeza();
     if(!empty($_GET['action'])){
-        echo $_GET['action'];
+        $controlador->individual($_GET['action']);
+    }else{
+        
+        $controlador->listar();
     }
-    $controlador->listar();
     $vista->pie();
 ?>

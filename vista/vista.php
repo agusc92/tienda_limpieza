@@ -20,11 +20,13 @@ class vista{
         $this->smarty ->assign('dato',$arr);
         $this->smarty -> display('vista/tenplates/lista.tpl');
     }
+    function mostrarProducto($arr){
+        $this->smarty->assign('producto',$arr);
+        $this->smarty->display('vista/tenplates/individual.tpl');
+       
+    }
 
 }
 
-function saludar(){
-    echo'hola';
-}
 
 ?>

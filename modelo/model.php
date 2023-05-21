@@ -15,5 +15,12 @@
             return $this->datos;
         }
 
+        public function traerUno($id){
+            $consulta = $this->db->prepare("SELECT * FROM productos WHERE id=2");
+            $consulta->execute();
+            $datos= $consulta->fetchAll(PDO::FETCH_ASSOC);
+            return $datos;
+        }
+
     }
 ?>
