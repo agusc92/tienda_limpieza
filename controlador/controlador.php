@@ -1,4 +1,5 @@
 <?php
+   
     require_once 'modelo/model.php';
     require_once 'vista/vista.php';
     class controlador{

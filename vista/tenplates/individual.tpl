@@ -7,4 +7,5 @@
     <li class="list-group-item">precio: {$producto['precio']}</li>
     
   </ul>
+  <a href="{$home}">volver</a>
 </div>

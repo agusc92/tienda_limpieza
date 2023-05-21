@@ -1,4 +1,5 @@
 <?php
+
 require 'smarty/libs/Smarty.class.php';
 class vista{
     
@@ -22,6 +23,7 @@ class vista{
     }
     function mostrarProducto($arr){
         $this->smarty->assign('producto',$arr);
+        $this->smarty->assign('home',URL_BASE);
         $this->smarty->display('vista/tenplates/individual.tpl');
        
     }

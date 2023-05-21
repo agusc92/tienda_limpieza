@@ -16,8 +16,8 @@
         }
 
         public function traerUno($id){
-            $consulta = $this->db->prepare("SELECT * FROM productos WHERE id=2");
-            $consulta->execute();
+            $consulta = $this->db->prepare("SELECT * FROM productos WHERE id=?");
+            $consulta->execute([$id]);
             $datos= $consulta->fetchAll(PDO::FETCH_ASSOC);
             return $datos;
         }
